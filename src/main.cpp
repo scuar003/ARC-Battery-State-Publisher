@@ -177,7 +177,7 @@ void loop()
         //Battery Volatge 
 
       snprintf(msg.data.data, 100, "Battery Voltage: %.2f", battery_voltage);
-      RCSOFTCHECK(rcl_publish(&publisher, &msg, NULL));
+     // RCSOFTCHECK(rcl_publish(&publisher, &msg, NULL));
 
       // Check if battery is attached.
       if (battery_voltage >= 2.0) {
